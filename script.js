@@ -2,18 +2,15 @@ const carousel = document.querySelector('.carousel');
 const cards = document.querySelectorAll('.card');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
+const getCardWidth = () => cards[0]?.offsetWidth || 0;
+
 
 // Kart genişliğini hesapla (dinamik olarak)
 const cardWidth = cards[0].offsetWidth;
 
 // Mevcut görsellerin bir listesini tanımlayın (örnek olarak)
 const images = [
-    "populer/tarif1.jpg",
-    "populer/tarif2.webp",
-    "populer/tarif3.jpg",
-    "populer/tarif4.jpg",
-    "populer/tarif5.jpg",
-    "populer/tarif6.jpg"
+
 ];
 
 // Sadece mevcut görselleri kullanarak kart ekle
