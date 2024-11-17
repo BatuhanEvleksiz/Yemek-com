@@ -117,6 +117,18 @@ a{
     border-bottom: 0.1rem solid transparent;
 }
 
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header .buttons button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
 /*! header end */
 
 /*! günün menüsü start */
@@ -128,7 +140,7 @@ a{
 }
 
 .gunun-menusu .box-container .box{
-    background-color: #fff;
+    background-color:#DD2C00;
     border-radius: 3rem;
 }
 
@@ -174,4 +186,135 @@ a{
     padding: 1rem 0;
 }
 
+.gunun-menusu .box-container .box .content .btn{
+    color: var(--main-color);
+    background-color: #fff;
+    font-weight: bold;
+}
 /*! günün menüsü end */
+
+/*! popüler yemekler start */
+
+.populer-yemekler .carousel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.populer-yemekler .carousel .card {
+    flex: 0 0 auto; /* Kartlar sabit genişlikte kalsın */
+    width: 300px; /* Kart genişliğini belirle */
+    height: 400px; /* Kart yüksekliği */
+    margin: 30px; /* Kartlar arası mesafe */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    scroll-snap-align: center; /* Kart hizalamasını merkezde tut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    transition: transform 0.5s ease-in-out;
+}
+
+.populer-yemekler .carousel:hover .card {
+    transform: scale(1.05); /* Kartı biraz büyütme efekti */
+}
+
+.populer-yemekler .carousel .card .image-container {
+    height: 60%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.populer-yemekler .carousel .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Görüntülerin taşmasını önler */
+    border-radius: 5px;
+}
+
+.populer-yemekler .carousel .card .recipe-image{
+    background-color: #dfdddd;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    height: 20px;
+    width: 20px;
+}
+
+.populer-yemekler .carousel .card .recipe-image img{
+    height: 15px;
+    width: 15px;
+}
+
+.populer-yemekler .carousel .card .time{
+    background-color: #dfdddd;
+    color: #b92353;
+    padding: 2.5px 5px;
+    height: 20px;
+    width: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.populer-yemekler .carousel .card .kcal-image {
+    background-color: #dfdddd;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    height: 20px;
+    width: 65px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.populer-yemekler .carousel .card .kcal-image i{
+    height: 15px;
+    width: 15px;
+    color: #b92353;
+}
+
+.populer-yemekler .carousel .card .cal{
+    background-color: #dfdddd;
+    color: #b92353;
+    padding: 2.5px 5px;
+    height: 20px;
+    width: 30px;
+}
+
+.populer-yemekler .carousel .card .btn{
+    color: #b92353;
+    background-color: #dfdddd;
+    
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Düğmelerin üstte görünmesini sağlar */
+    transition: transform 0.3s ease-in-out;
+}
+
+.prev:hover, .next:hover {
+    transform: translateY(-50%) scale(1.1); /* Hover efekti ile buton büyür */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*! popüler yemekler end */
