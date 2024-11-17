@@ -284,10 +284,27 @@ a{
     width: 30px;
 }
 
-.populer-yemekler .carousel .card .btn{
-    color: #b92353;
-    background-color: #dfdddd;
-    
+.populer-yemekler .carousel .card .populer-btn {
+    display: flex; /* Kapsayıcı flexbox yap */
+    align-items: center; /* Dikeyde ortala */
+    justify-content: center; /* Yatayda ortala */
+    height: 10%; /* İsteğe bağlı, tam yükseklik */
+}
+
+
+.populer-yemekler .carousel .card .populer-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 0.2rem solid var(--main-color);
+}
+
+.populer-yemekler .carousel .card .populer-btn a i{
+    font-size: 1.6rem;
+    color: var(--main-color);
 }
 
 .prev, .next {
