@@ -108,7 +108,7 @@ a{
 }
 
 .header{
-    background-image: url(images/navbar.svg);
+    background-image: url(../images/navbar.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -435,6 +435,7 @@ a{
 .footer{
     background-color: var(--black-color);
     text-align: center;
+    padding-bottom: 0px;
 }
 
 .footer .search{
