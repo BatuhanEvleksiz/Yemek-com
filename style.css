@@ -122,6 +122,7 @@ a{
     position: sticky;
     top: 0;
     z-index: 1000;
+    font-weight: bold;
 }
 
 .header .navbar{
@@ -233,7 +234,7 @@ a{
 
 .populer-yemekler .carousel .card {
     flex: 0 0 auto; /* Kartlar sabit genişlikte kalsın */
-    width: 300px; /* Kart genişliğini belirle */
+    width: 340px; /* Kart genişliğini belirle */
     height: 520px; /* Kart yüksekliği */
     margin: 30px; /* Kartlar arası mesafe */
     text-align: center;
@@ -329,6 +330,9 @@ a{
     height: 15%; /* İsteğe bağlı, tam yükseklik */
 }
 
+.populer-yemekler .carousel .card .populer-btn:hover{
+    opacity: 50%;
+}
 
 .populer-yemekler .carousel .card .populer-btn a{
     display: flex;
@@ -409,20 +413,20 @@ a{
     justify-content: center; /* Buton içeriğini yatayda ortalar */
     align-items: center; /* Buton içeriğini dikeyde ortalar */
     width: 100%; /* Kutunun genişliğini alır */
-    height: 100%; /* Kutunun yüksekliğini alır */
-    font-size: 1.2rem; /* Yazı boyutunu ayarla */
+    height: 50%; /* Kutunun yüksekliğini alır */
+    font-size: 1.9rem; /* Yazı boyutunu ayarla */
     font-weight: bold; /* Yazı stilini kalın yapar */
-    color: #ffffff; /* Yazı rengi */
-    background-color: #DD2C00; /* Arka plan rengi */
-    border: none; /* Buton kenarlığını kaldır */
-    border-radius: 8px; /* Köşeleri yuvarlar */
-    cursor: pointer; /* Tıklanabilir gösterir */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #000000; /* Yazı rengi */
+    background-color: #ffffff; /* Arka plan rengi */
+    border-bottom: 0.2rem solid #DD2C00; /* Buton kenarlığını kaldır */
+    border-radius: 0px; /* Köşeleri yuvarlar */
+    padding-left: 1%;
 }
 
-.category .box-container .btn:hover {
-    background-color: #DD2C00; /* Hover durumunda arka plan değişir */
-    transform: scale(1.05); /* Hover durumunda hafif büyütme efekti */
+.category .box-container .box h2{
+    font-size: 1.4rem;
+    color: #a5a5a5;
+    padding-left: 8%;
 }
 
 /*! category end */
