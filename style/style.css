@@ -604,13 +604,49 @@ a{
     border-bottom: 4px solid #be1f54;
 }
 
-.recipe-page .box-container img{
+.recipe-page .box-container .ingredients-title img{
+    display: flex;
     height: 40px;
     width: 40px;
 }
 
-.recipe-page .box-container h2{
+.recipe-page .box-container .ingredients-title h2{
+    display: flex;
+    gap: 5px;
     color:  #be1f54;
     font-size: 2.5rem;
+}
+
+.recipe-page .box-container .ingredients li{
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.recipe-page .box-container .ingredients span{
+    font-weight: bold;
+}
+
+.recipe-page .box-container .ingredients h2{
+    font-size: 2rem;
+    text-transform: none;
+    color:  #be1f54;
+    margin-left: 10px;
+}
+
+.recipe-page .box-container .prep img{
+    display: flex;
+    height: 40px;
+    width: 40px;
+}
+
+.recipe-page .box-container .prep h1{
+    display: flex;
+    gap: 5px;
+    color:  #be1f54;
+    font-size: 2.5rem;
+}
+
+.recipe-page .box-container .prep p{
+    font-size: medium;
 }
 /*! Recipe Page End */
