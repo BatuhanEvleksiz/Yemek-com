@@ -511,3 +511,106 @@ a{
     color: #DD2C00;
 }
 /*! Footer End */
+
+
+/*! Recipe Page Start */
+
+.recipe-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-page .box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.recipe-page .box-container .box h1{
+    display: flex;
+    font-size: 6.5rem;
+    width: 100%;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 4px solid #be1f54;
+}
+
+.recipe-page .box-container .box span{
+    display: flex;
+    font-size: 6.5rem;
+    width: 100%;
+    font-weight: bold;
+    color: #be1f54;
+    border-bottom: none;
+}
+
+.recipe-page .box-container .box img {
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe-page .box-container .info {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.recipe-page .box-container .info h1{
+    font-size: 6rem;
+    border: 2px dashed #be1f54;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.recipe-page .box-container .info h1 span{
+    font-weight: bold;
+}
+
+.recipe-page .box-container .info h1 .kalori{
+    color: #be1f54;
+}
+
+.recipe-page .box-container .info .row1{
+    display: flex; /* Yan yana yerleştirir */
+    justify-content: center; /* Ortada hizalar */
+    gap: 80px; /* Elemanlar arasına boşluk koyar */
+    margin: 10px 0; /* Üst ve alt boşluk */
+}
+.recipe-page .box-container .info .row2{
+    display: flex; /* Yan yana yerleştirir */
+    justify-content: center; /* Ortada hizalar */
+    gap: 20%; /* Elemanlar arasına boşluk koyar */
+    margin: 10px 0; /* Üst ve alt boşluk */
+}
+
+.recipe-page .box-container .info .row1 h2{
+    color: #be1f54;
+    font-size: 2.5rem; 
+}
+
+.recipe-page .box-container .info .row2 h4{
+    color: #595c6b;
+    font-size: 2.5rem;
+    border-bottom: 4px solid #be1f54;
+}
+
+.recipe-page .box-container img{
+    height: 40px;
+    width: 40px;
+}
+
+.recipe-page .box-container h2{
+    color:  #be1f54;
+    font-size: 2.5rem;
+}
+/*! Recipe Page End */
