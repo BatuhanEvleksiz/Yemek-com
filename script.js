@@ -41,3 +41,4 @@ prevButton.addEventListener('click', () => {
         behavior: 'smooth' // Yumuşak geçiş
     });
 });
+

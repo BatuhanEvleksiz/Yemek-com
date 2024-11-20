@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    font-family: Poppins;
+    color: #1E1E1E;
+    background-color: #CDCDCD;
+    background-image:
+    repeating-linear-gradient(
+        to right, transparent 0 150px, #0001 150px 151px
+    ),
+    repeating-linear-gradient(
+        to bottom, transparent 0 150px, #0001 150px 151px
+    ),
+    linear-gradient(to right, #ffffff, #ffffffcc);}
+
+:root{
+    --main-color: #e84242;
+    --black-color: #121212;
+    --light-gray: #f5f5f5;
+    --dark-gray: #555555;
+    --hover-red: #ff4c4c;
+
+    border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease ;
+}
+
+
+/*! base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: var(--black-color);
+}
+
+
+section{
+    padding: 3.5rem 7%;
+}
+
+a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.75;
+}
+
+.heading {
+    color: #ff0000;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+    
+}
+
+.heading span{
+    color: var(--black-color);
+    text-transform: uppercase;
+    
+} 
+
+/*! header start */
+
+.header .logo img{
+    height: 10rem;
+    border-radius: 100px;
+}
+
+.header{
+    background-image: url(../images/navbar.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold;
+}
+
+.header .navbar{
+    color: #fff;
+    z-index: 0;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar a:hover{
+    color:  #007bff;;
+    transform: scale(1.1);
+}
+
+.header .buttons button{
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header .buttons button:hover {
+    color:  #007bff;;
+    transform: scale(1.1);
+}
+/*! header end */
+
+/*! Footer Start */
+.footer{
+    background-color: var(--black-color);
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .search .btn-primary:hover {
+    background-color: var(--black-color)
+}
+
+.footer .search .search-input {
+    padding-left: 15px;
+    width: 30rem;
+    border-radius: 100px;
+}
+
+.footer .search .btn-primary{
+    background-color:#DD2C00;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    border:  0.3px solid #fff;
+}
+
+.footer .share{
+    padding: 2rem 0;
+}
+
+.footer .share a{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    border: 0.3px solid #fff;
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+
+.footer .share a:hover{
+    background-color: #DD2C00;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .links a {
+    background-color: #DD2C00;
+    padding: 0.7rem 2rem;
+    color: #fff;
+    font-size: 2rem;
+    border: 0.3px solid #fff;
+    border-radius: 10px;
+}
+
+.footer .links a:hover {
+    background-color: var(--black-color);
+    opacity: 0.7;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 1.5rem;
+}
+
+.footer .credit span{
+    color: #DD2C00;
+}
+/*! Footer End */
+
+/*! Recipe Page Start */
+
+.recipe-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-page .box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.recipe-page .box-container .box h1{
+    display: flex;
+    font-size: 6.5rem;
+    width: 100%;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 4px solid#DD2C00;
+}
+
+.recipe-page .box-container .box span{
+    display: flex;
+    font-size: 6.5rem;
+    width: 100%;
+    font-weight: bold;
+    color: #DD2C00;
+    border-bottom: none;
+}
+
+.recipe-page .box-container .box img {
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe-page .box-container .info {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.recipe-page .box-container .info h1{
+    font-size: 6rem;
+    border: 2px dashed #DD2C00;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.recipe-page .box-container .info h1 span{
+    font-weight: bold;
+}
+
+.recipe-page .box-container .info h1 .kalori{
+    color: #DD2C00;
+}
+
+.recipe-page .box-container .info .row1{
+    display: flex; /* Yan yana yerleştirir */
+    justify-content: center; /* Ortada hizalar */
+    gap: 80px; /* Elemanlar arasına boşluk koyar */
+    margin: 10px 0; /* Üst ve alt boşluk */
+}
+.recipe-page .box-container .info .row2{
+    display: flex; /* Yan yana yerleştirir */
+    justify-content: center; /* Ortada hizalar */
+    gap: 20%; /* Elemanlar arasına boşluk koyar */
+    margin: 10px 0; /* Üst ve alt boşluk */
+}
+
+.recipe-page .box-container .info .row1 h2{
+    color: #DD2C00;
+    font-size: 2.5rem; 
+}
+
+.recipe-page .box-container .info .row2 h4{
+    color: #595c6b;
+    font-size: 2.5rem;
+    border-bottom: 4px solid #DD2C00;
+}
+
+.recipe-page .box-container .ingredients-title img{
+    display: flex;
+    height: 40px;
+    width: 40px;
+}
+
+.recipe-page .box-container .ingredients-title h2{
+    display: flex;
+    gap: 5px;
+    color: #DD2C00;
+    font-size: 2.5rem;
+}
+
+.recipe-page .box-container .ingredients li{
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.recipe-page .box-container .ingredients span{
+    font-weight: bold;
+}
+
+.recipe-page .box-container .ingredients h2{
+    font-size: 2rem;
+    text-transform: none;
+    color:  #DD2C00;
+    margin-left: 10px;
+}
+
+.recipe-page .box-container .prep img{
+    display: flex;
+    height: 40px;
+    width: 40px;
+}
+
+.recipe-page .box-container .prep h1{
+    display: flex;
+    gap: 5px;
+    color:  #DD2C00;
+    font-size: 2.5rem;
+}
+
+.recipe-page .box-container .prep p{
+    font-size: medium;
+}
+/*! Recipe Page End */
