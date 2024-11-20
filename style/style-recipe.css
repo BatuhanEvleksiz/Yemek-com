@@ -323,6 +323,7 @@ a{
 }
 
 .recipe-page .box-container .info .row h2{
+    padding-top: 5px;
     color: #DD2C00;
     font-size: 2.5rem; 
     display: flex; /* Flexbox ile içerik hizalaması */
@@ -356,6 +357,7 @@ a{
 .recipe-page .box-container .ingredients li{
     font-size: 1.5rem;
     padding-left: 20px;
+    text-transform: capitalize;
 }
 
 .recipe-page .box-container .ingredients span{
