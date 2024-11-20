@@ -305,28 +305,33 @@ a{
     color: #DD2C00;
 }
 
-.recipe-page .box-container .info .row1{
-    display: flex; /* Yan yana yerleştirir */
+.recipe-page .box-container .info .row{
+    display: block; /* Yan yana yerleştirir */
     justify-content: center; /* Ortada hizalar */
+    align-items: center;
     gap: 80px; /* Elemanlar arasına boşluk koyar */
     margin: 10px 0; /* Üst ve alt boşluk */
 }
-.recipe-page .box-container .info .row2{
-    display: flex; /* Yan yana yerleştirir */
-    justify-content: center; /* Ortada hizalar */
-    gap: 20%; /* Elemanlar arasına boşluk koyar */
-    margin: 10px 0; /* Üst ve alt boşluk */
+.recipe-page .box-container .info .row{
+    background-color: #0001;
 }
 
-.recipe-page .box-container .info .row1 h2{
+.recipe-page .box-container .info .row img{
+    background-color: #f5f5f5;
+    height: 40px;
+    width: 40px;
+}
+
+.recipe-page .box-container .info .row h2{
     color: #DD2C00;
     font-size: 2.5rem; 
+    display: flex; /* Flexbox ile içerik hizalaması */
+    align-items: center; /* Resmi yazıya göre ortalar */
+    gap: 10px; /* Resim ve yazı arasında boşluk */
 }
 
-.recipe-page .box-container .info .row2 h4{
-    color: #595c6b;
-    font-size: 2.5rem;
-    border-bottom: 4px solid #DD2C00;
+.recipe-page .box-container .info .row h2 span{
+    color: #000000;
 }
 
 .recipe-page .box-container .ingredients-title img{
@@ -341,6 +346,12 @@ a{
     color: #DD2C00;
     font-size: 2.5rem;
 }
+
+.recipe-page .box-container .ingredients{
+    background-color: #0001;
+    border-radius: 10px; 
+}
+
 
 .recipe-page .box-container .ingredients li{
     font-size: 1.5rem;
@@ -372,6 +383,9 @@ a{
 }
 
 .recipe-page .box-container .prep p{
+    margin-top: 10px;
     font-size: medium;
+    background-color: #0001;
+    border-radius: 10px;
 }
 /*! Recipe Page End */
