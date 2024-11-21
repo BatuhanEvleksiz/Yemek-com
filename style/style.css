@@ -399,10 +399,6 @@ a{
     max-width: calc(33.333% - 20px);
 }
 
-.category .box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
 
 .category .box-container .box .fa.fa-cutlery{
     padding: 10px;
