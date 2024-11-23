@@ -16,7 +16,7 @@ body{
     linear-gradient(to right, #ffffff, #ffffffcc);}
 
 :root{
-    --main-color: #e84242;
+    --main-color: #dd2c00;
     --black-color: #121212;
     --light-gray: #f5f5f5;
     --dark-gray: #555555;
@@ -474,6 +474,11 @@ a{
     font-size: 1.4rem;
     color: #a5a5a5;
     padding-left: 8%;
+}
+
+.category .box-container .box img{
+    height: 35px;
+    width: 35px;
 }
 
 /*! category end */
