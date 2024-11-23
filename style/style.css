@@ -97,8 +97,8 @@ a{
 .heading span{
     color: var(--black-color);
     text-transform: uppercase;
-    
-} 
+
+}
 
 .search-input{
     font-size: 1.6rem;
@@ -106,6 +106,24 @@ a{
     padding: 1rem;
     text-transform: none;
     border-radius: 3rem;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+
+}
+
+.header .navbar.active,
+.header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .navbar.active{
+    right : 3rem;
 }
 
 /*! header start */
