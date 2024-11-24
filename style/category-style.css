@@ -161,25 +161,21 @@ a{
 
 .category .carousel {
     display: flex;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    gap: 10px;
-    padding: 10px;
-    scroll-behavior: smooth;
+    flex-wrap: wrap; /* Kartların birden fazla satıra geçmesini sağlar */
+    justify-content: center; /* Kartları ortalar */
+    gap: 30px; /* Kartlar arasındaki mesafeyi belirler */
+    padding: 20px; /* Sağdan ve soldan boşluk ekler */
 }
 
 .category .carousel .card {
-    flex: 0 0 auto; /* Kartlar sabit genişlikte kalsın */
-    width: 340px; /* Kart genişliğini belirle */
-    height: 520px; /* Kart yüksekliği */
-    margin: 30px; /* Kartlar arası mesafe */
-    text-align: center;
+    flex: 0 1 calc(33.333% - 40px); /* 3 kart sığacak şekilde genişlik ayarla, boşluklara göre hesaplama yap */
+    box-sizing: border-box; /* Padding ve border genişliğe dahil */
+    max-width: 340px; /* Maksimum genişlik belirler */
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #fff;
     scroll-snap-align: center; /* Kart hizalamasını merkezde tut */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
-    transition: transform 0.5s ease-in-out;
 }
 
 .category .carousel .card .image-container {
@@ -283,6 +279,96 @@ a{
 
 /*! popüler yemekler end */
 
+/*! Responsive start */
+
+@media (max-width: 480px) {
+    .category .carousel .card {
+        flex: 0 1 calc(100% - 20px); /* Tek kart tam genişlik */
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .category .carousel .card .image-container {
+        aspect-ratio: 3/4; /* Daha dar bir oran */
+    }
+
+    .category .carousel .card img {
+        object-fit: cover;
+    }
+}
+
+
+@media (min-width: 501px) and (max-width: 1024px){
+    .category .carousel .card {
+        flex: 0 1 calc(50% - 30px); /* 2 kart yan yana */
+        max-width: 100%; /* Kart genişliğini sınırlama */
+    }
+
+    .category .carousel .card .image-container {
+        aspect-ratio: 4/3; /* Daha dikey bir oran kullan */
+    }
+
+    .category .carousel .card img {
+        object-fit: cover; /* Görüntülerin düzgün sığmasını sağlar */
+    }
+}
+
+
+
+@media (max-width: 1440px) {
+    .category .carousel .card {
+        flex: 0 1 calc(33.333% - 40px); /* 3 kart yan yana */
+        height: 450px;
+    }
+    
+}
+
+
+/* 2560px ve üzeri ekranlar için */
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .category .heading {
+        padding-left: 320px; /* Başlığı ortalar */
+        margin-bottom: 40px; /* Tariflere biraz boşluk bırakır */
+        font-size: 4.5rem; /* Daha büyük yazı */
+    }
+
+    .category .carousel {
+        gap: 190px;
+    }
+
+    .category .carousel .card {
+        flex: 0 1 calc(33.333% - 60px); /* Kart genişliğini artırır */
+        max-width: 400px; /* Maksimum genişliği büyüt */
+        height: 600px; /* Kart yüksekliğini artır */
+    }
+
+    .category .carousel .card h1 {
+        font-size: 1rem; /* Kart başlıklarını büyüt */
+    }
+
+    .category .carousel .card h4 {
+        font-size: 1.2rem; /* Alt başlıkları büyüt */
+    }
+
+    .category .carousel .card .time,
+    .category .carousel .card .cal {
+        font-size: 1rem; /* Süre ve kalori yazılarını büyüt */
+        padding: 5px 10px; /* Daha geniş padding */
+    }
+
+    .category .carousel .card .populer-btn a {
+        width: 8rem; /* Daha büyük buton */
+        height: 8rem; /* Daha büyük buton */
+        border-width: 0.3rem; /* Buton çerçevesini kalınlaştır */
+    }
+
+    .category .carousel .card .populer-btn a i {
+        font-size: 2rem; /* "+" simgesini büyüt */
+    }
+}
+
+/*! Responsive end */
 
 /*! Footer Start */
 .footer{
