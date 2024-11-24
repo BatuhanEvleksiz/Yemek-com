@@ -465,7 +465,7 @@ a{
     font-weight: bold; /* Yazı stilini kalın yapar */
     color: #000000; /* Yazı rengi */
     background-color: #ffffff; /* Arka plan rengi */
-    border-bottom: 0.2rem solid #DD2C00; /* Buton kenarlığını kaldır */
+    border-bottom: 0.2rem solid #DD2C00;
     border-radius: 0px; /* Köşeleri yuvarlar */
     padding-left: 1%;
 }
