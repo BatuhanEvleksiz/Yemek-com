@@ -341,7 +341,7 @@ a{
 
 
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1860px) {
     .category .carousel .card {
         flex: 0 1 calc(33.333% - 40px); /* 3 kart yan yana */
         height: 450px;
@@ -355,7 +355,7 @@ a{
 
 
 /* 2560px ve üzeri ekranlar için */
-@media (min-width: 1441px) and (max-width: 2560px) {
+@media (min-width: 1840px) and (max-width: 2560px) {
     .category .heading {
         padding-left: 320px; /* Başlığı ortalar */
         margin-bottom: 40px; /* Tariflere biraz boşluk bırakır */
