@@ -323,7 +323,7 @@ a{
     }
 
     .category .heading { 
-        padding-left: 3 0px;
+        text-align: center;
     }
 }
 
@@ -343,7 +343,7 @@ a{
     }
 
     .category .heading { 
-        padding-left: 40px;
+        text-align: center;
     }
 }
 
@@ -356,7 +356,7 @@ a{
     }
     
     .category .heading { 
-        padding-left: 80px;
+        text-align: center;
     }
 }
 
@@ -364,7 +364,7 @@ a{
 /* 2560px ve üzeri ekranlar için */
 @media (min-width: 1840px) and (max-width: 2560px) {
     .category .heading {
-        padding-left: 320px; /* Başlığı ortalar */
+        text-align: center; /* Başlığı ortalar */
         margin-bottom: 40px; /* Tariflere biraz boşluk bırakır */
         font-size: 4.5rem; /* Daha büyük yazı */
     }
