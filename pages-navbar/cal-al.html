@@ -66,6 +66,21 @@
                 <option value="1.9">Çok Yoğun Aktivite</option>
             </select>
         </div>
+        <!-- Cinsiyet Seçimi -->
+        <div class="gender-selection">
+            <div class="gender-options">
+                <div class="gender-option" id="male" onclick="selectGender('male')">
+                    <img src="../images/man.png" alt="Erkek">
+                    
+                    <div class="selected-bubble"></div>
+                </div>
+                <div class="gender-option" id="female" onclick="selectGender('female')">
+                    <img src="../images/woman.png" alt="Kadın">
+                    
+                    <div class="selected-bubble"></div>
+                </div>
+            </div>
+        </div>
         <!-- Hesapla Butonu -->
         <div class="form-group">
             <button onclick="calculateCalories()">Hesapla</button>

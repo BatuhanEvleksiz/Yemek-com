@@ -290,4 +290,80 @@ a{
     font-weight: bold;
 }
 
+.calculator .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.gender-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gender-option {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    position: relative;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.gender-option img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.gender-option span {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.selected-bubble {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: none; /* Başlangıçta gizli */
+}
+
+/* Erkek için border mavi */
+.gender-option.selected.male {
+    border-color: #007aff; /* Erkek seçildiğinde border mavi */
+    transform: scale(1.1);
+}
+
+/* Kadın için border kırmızı */
+.gender-option.selected.female {
+    border-color: #DD2C00; /* Kadın seçildiğinde border kırmızı */
+    transform: scale(1.1);
+}
+
+.gender-option.selected .selected-bubble {
+    display: block; /* Seçildiğinde baloncuk göster */
+}
+
+.gender-option.selected.male .selected-bubble {
+    background-color: #007aff; /* Erkek için baloncuk rengi mavi */
+}
+
+.gender-option.selected.female .selected-bubble {
+    background-color: #DD2C00; /* Kadın için baloncuk rengi kırmızı */
+}
+
+
 /*! Cal Page End */
