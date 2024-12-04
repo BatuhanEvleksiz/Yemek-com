@@ -265,8 +265,8 @@ a{
     font-size: 6.5rem;
     width: 100%;
     font-weight: bold;
-    color: #000000;
-    border-bottom: 4px solid#DD2C00;
+    color: #DD2C00;
+    border-bottom: 8px solid#000000;
 }
 
 .recipe-page .box-container .box span{
@@ -274,7 +274,7 @@ a{
     font-size: 6.5rem;
     width: 100%;
     font-weight: bold;
-    color: #DD2C00;
+    color: #000000;
     border-bottom: none;
 }
 
