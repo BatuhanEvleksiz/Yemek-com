@@ -338,31 +338,31 @@ a{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    display: none; /* Başlangıçta gizli */
+    display: none; 
 }
 
-/* Erkek için border mavi */
+
 .gender-option.selected.male {
-    border-color: #007aff; /* Erkek seçildiğinde border mavi */
+    border-color: #007aff;
     transform: scale(1.1);
 }
 
-/* Kadın için border kırmızı */
+
 .gender-option.selected.female {
-    border-color: #DD2C00; /* Kadın seçildiğinde border kırmızı */
+    border-color: #DD2C00; 
     transform: scale(1.1);
 }
 
 .gender-option.selected .selected-bubble {
-    display: block; /* Seçildiğinde baloncuk göster */
+    display: block; 
 }
 
 .gender-option.selected.male .selected-bubble {
-    background-color: #007aff; /* Erkek için baloncuk rengi mavi */
+    background-color: #007aff; 
 }
 
 .gender-option.selected.female .selected-bubble {
-    background-color: #DD2C00; /* Kadın için baloncuk rengi kırmızı */
+    background-color: #DD2C00; 
 }
 
 
