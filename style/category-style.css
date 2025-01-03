@@ -212,7 +212,7 @@ a{
 .category .carousel .card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Görüntülerin taşmasını önler */
+    object-fit: cover; 
     border-radius: 5px;
 }
 
@@ -277,10 +277,10 @@ a{
 }
 
 .category .carousel .card .populer-btn {
-    display: flex; /* Kapsayıcı flexbox yap */
-    align-items: center; /* Dikeyde ortala */
-    justify-content: center; /* Yatayda ortala */
-    height: 15%; /* İsteğe bağlı, tam yükseklik */
+    display: flex;  
+    align-items: center; 
+    justify-content: center; 
+    height: 15%; 
 }
 
 .category .carousel .card .populer-btn:hover{
@@ -308,14 +308,14 @@ a{
 
 @media (max-width: 480px) {
     .category .carousel .card {
-        flex: 0 1 calc(100% - 20px); /* Tek kart tam genişlik */
+        flex: 0 1 calc(100% - 20px); 
         border: none;
         box-shadow: none;
         background-color: transparent;
     }
 
     .category .carousel .card .image-container {
-        aspect-ratio: 3/4; /* Daha dar bir oran */
+        aspect-ratio: 3/4; 
     }
 
     .category .carousel .card img {
@@ -330,16 +330,16 @@ a{
 
 @media (min-width: 501px) and (max-width: 1024px){
     .category .carousel .card {
-        flex: 0 1 calc(50% - 30px); /* 2 kart yan yana */
-        max-width: 100%; /* Kart genişliğini sınırlama */
+        flex: 0 1 calc(50% - 30px); 
+        max-width: 100%; 
     }
 
     .category .carousel .card .image-container {
-        aspect-ratio: 4/3; /* Daha dikey bir oran kullan */
+        aspect-ratio: 4/3; 
     }
 
     .category .carousel .card img {
-        object-fit: cover; /* Görüntülerin düzgün sığmasını sağlar */
+        object-fit: cover; 
     }
 
     .category .heading { 
@@ -351,7 +351,7 @@ a{
 
 @media (min-width: 1440px) and (max-width: 1860px) {
     .category .carousel .card {
-        flex: 0 1 calc(33.333% - 40px); /* 3 kart yan yana */
+        flex: 0 1 calc(33.333% - 40px);
         height: 450px;
     }
     
@@ -364,9 +364,9 @@ a{
 /* 2560px ve üzeri ekranlar için */
 @media (min-width: 1840px) and (max-width: 2560px) {
     .category .heading {
-        text-align: center; /* Başlığı ortalar */
-        margin-bottom: 40px; /* Tariflere biraz boşluk bırakır */
-        font-size: 4.5rem; /* Daha büyük yazı */
+        text-align: center; 
+        margin-bottom: 40px; 
+        font-size: 4.5rem; 
     }
 
     .category .carousel {
